@@ -2,7 +2,7 @@
 
 ### 1.1 인공 지능과 머신 러닝, 딥 러닝
 
-![image-20200126201904109](C:\Users\jungg\AppData\Roaming\Typora\typora-user-images\image-20200126201904109.png)
+![1-1](C:\Users\jungg\Pictures\1-1.png)
 
 #### 1.1.1 인공 지능
 
@@ -20,7 +20,7 @@
 
 머신 러닝 시스템은 명시적으로 프로그램 되는 것이 아니라 훈련시키는 것이다. 작업과 관련 있는 많은 샘플을 제공하면 데이터에서 구조를 찾아 그 작업을 자동화하기 위한 규칙을 만들어 낸다.
 
-![image-20200126203636768](C:\Users\jungg\AppData\Roaming\Typora\typora-user-images\image-20200126203636768.png)
+![1-2](C:\Users\jungg\Pictures\1-2.png)
 
 
 
@@ -40,7 +40,7 @@
 
  흰색 포인트와 빨간색 포인트를 완벽하게 구분하는 새로운 데이터 표현이다.
 
-![image-20200126205251652](C:\Users\jungg\AppData\Roaming\Typora\typora-user-images\image-20200126205251652.png)
+![1-4](C:\Users\jungg\Pictures\1-4.png)
 
 좌표 변환을 통해 새로운 표현을 만들었다. 이 좌표 변환을 통해 'x>0 이면 빨간색 포인트이다.' 또는 'x<0 이면 흰색 포인트다.'라는 간단한 규칙으로 나타낼 수 있다.
 
@@ -54,7 +54,9 @@
 
 딥러닝에서는 기본 층을 겹겹이 쌓아 올려 구성한 **신경망(Neural Network)**이라는 모델을 사용하여 표현 층을 학습한다. 딥러닝은 그냥 데이터로부터 표현을 학습하는 수학 모델이다.
 
-![image-20200126211234482](C:\Users\jungg\AppData\Roaming\Typora\typora-user-images\image-20200126211234482.png)
+![1-6](C:\Users\jungg\Pictures\1-6.png)
+
+
 
 심층 신경망을 정보가 연속된 필터를 통과하면서 순도 높게 정제되는 다단계 정보 추출 작업이다. 딥러닝은 이와 같이 데이터 표현을 학습하기 위한 다단계 처리 방식을 말한다.
 
@@ -68,7 +70,9 @@
 
 어떤 것을 조정하려면 관찰해야 한다. 신경망의 출력을 제어하려면 출력이 기대하는 것보다 얼마나 벗어났는지는 신경망의 **손실 함수(loss function** 또는 **목적 함수(objective function)**를 측정하면 된다. 기본적인 딥러닝 방식은 이 점수를 피드백 신호로 사용하여 현재 샘플의 손실 점수가 감소되는 방향으로 가중치 값을 조금씩 수정한다. 이런 수정 과정은 딥러닝의 핵심 알고리즘인 **역전파(backpropagation)** 알고리즘을 구현한 **옵티마이저(optimizer)**가 담당한다.
 
-![image-20200126212310934](C:\Users\jungg\AppData\Roaming\Typora\typora-user-images\image-20200126212310934.png)
+![1-9](C:\Users\jungg\Pictures\1-9.png)
+
+
 
 초기에는 네트워크의 가중치가 랜덤한 값으로 할당하여 랜덤한 변환을 연속적으로 수행한다. 출력은 기대한 것과 멀어지고 손실이 커지지만 네트워크가 모든 샘플을 처리하면서 가중치가 올바른 방향으로 조정되고 손실 값이 감소한다. 이를 **훈련 반복(training loop)**이라고 하며, 충분한 횟수만큼 반복하면 손실 함수를 최소화하는 가중치 값을 산출한다.
 

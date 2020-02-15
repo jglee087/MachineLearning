@@ -15,7 +15,7 @@ https://www.anaconda.com/
 
 https://pytorch.org/ 에 접속하여 아래쪽으로 내려오면 다음과 같은 화면을 볼 수 있다.
 
-![](./img/InstallPytorch.png)
+![Install1](./img/InstallPyTorch.png)
 
 
 
